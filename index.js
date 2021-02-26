@@ -190,8 +190,8 @@ fill(gallons){
      PRAssignment(subject){
       return `${this.name} has submitted a PR for ${subject}`
      }
-     sprintChallenge(){
-
+     sprintChallenge(subject){
+      return `${this.name} has begun sprint challenge on ${subject}`
      }
  }
   
@@ -214,11 +214,11 @@ fill(gallons){
        this.gradClassName = attributes.gradClassName;
        this.favInstructor = attributes.favInstructor;
      }
-     standUp(){
-
+     standUp(channel){
+      return `${this.name} announces to ${channel}, @channel standy times!`
      }
-     debugsCode(){
-
+     debugsCode(student,subject){
+      return `${this.name} debugs ${student.name}'s code on ${subject}`
 
      }
  }
